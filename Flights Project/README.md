@@ -15,4 +15,21 @@ c.	Page 3 would have the List of the JSON file contents retrieved using the URL 
 
 
 
+How to run:
+Please check configurations in the config/db.js file.
+if your mongodb connection runs fine, then you may seed the database using the seedDB.js file it, will pick one file from each directory and will add the contents to the mongo database.
+Also please run 
+
+> npm install . 
+> bower install
+
+to install all dependencies and then run
+
+> npm start
+
+and the application will start at http://localhost:8000
+
+Thank you.
+
+
 
