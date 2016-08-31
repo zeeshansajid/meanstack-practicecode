@@ -1,0 +1,24 @@
+<div id="carrierFlightDetails" class="panel panel-default col-md-10  col-md-offset-1">
+    <h3 class="panel-header">Flight Details</h3>
+    <table class="table table-bordered table-hover">
+        <thead>
+        <tr>
+            <th>Index</th>
+            <th>Id</th>
+            <th ng-repeat="col in colNames">
+                {{col}}
+            </th>
+        </tr>
+        </thead>
+        <tbody>
+        
+        <tr ng-repeat="(key, values) in flightDetails">
+            <td>{{$index+1}}</td>
+            <td>{{key}}</td>
+            <td ng-repeat="value in values">
+                {{value}}
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</div>

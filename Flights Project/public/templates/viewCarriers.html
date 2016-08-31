@@ -1,0 +1,19 @@
+<div  class="panel panel-default col-md-6 col-md-offset-2">
+    <h3 class="panel-header">Carriers List</h3>
+    <table class="table table-bordered table-hover">
+        <thead>
+        <tr>
+            <th>Index</th>
+            <th>Carriers</th>
+
+        </tr>
+        </thead>
+        <tbody>
+
+        <tr ng-repeat="item in carriers">
+            <td>{{$index+1}}</td>
+            <td><a href="#/viewFlights/{{item.name}}">{{item.name}}</a></td>
+        </tr>
+        </tbody>
+    </table>
+</div>

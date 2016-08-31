@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head lang="en">
+    <meta charset="utf-8">
+    <title>Mean Stack Project</title>
+    <link rel="stylesheet" href="./libs/bootstrap/dist/css/bootstrap.min.css">
+</head>
+<body>
+
+	<div data-example-id="inverted-navbar" class="bs-example"> 
+			<nav class="navbar navbar-inverse"> 
+				<div class="container-fluid"> 
+					<div class="navbar-header"> 
+						<a class="navbar-brand" href="#">Mean Stack Project</a> 
+					</div> 
+					<div id="bs-example-navbar-collapse-9" class="collapse navbar-collapse"> 
+						<ul class="nav navbar-nav"> 
+							<li>
+								<a href="#/viewCarriers">Carriers</a>
+							</li> 
+						</ul> 
+					</div> 
+				</div> 
+			</nav> 
+	</div>
+
+
+	<div ng-view></div>
+	<script type="text/javascript" src="./libs/angular/angular.min.js"></script>
+	<script type="text/javascript" src="./libs/angular-route/angular-route.js"></script>
+	<script type="text/javascript" src="app.js"></script>
+
+	<script type="text/javascript" src="services/servicesModule.js"></script>
+	<script type="text/javascript" src="controllers/controllersModule.js"></script>
+</body>
+</html>
